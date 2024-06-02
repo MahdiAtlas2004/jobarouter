@@ -30,7 +30,7 @@ button {
 header nav {
   display: flex;
   gap: 16px;
-  justify-content: end;
+  justify-content: flex-end;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -47,7 +47,10 @@ header nav a.active {
   background-color: var(--primary);
 }
 /* page content */
-
+main {
+  max-width: 1200px;
+  margin: 40px auto;
+}
 
 /* help layout */
 
