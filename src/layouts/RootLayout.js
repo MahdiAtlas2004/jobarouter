@@ -7,11 +7,13 @@ export default function RootLayout() {
         <nav>
           <h1>Jobarouter</h1>
           <NavLink to="/">Home</NavLink>
-          <NavLink to="/about">about</NavLink>
+          <NavLink to="about">About</NavLink>
+          <NavLink to="help">Help</NavLink>
         </nav>
       </header>
 
       <main>
+        {/* The Outlet tells that where should child routes must render */}
         <Outlet />
       </main>
     </div>
