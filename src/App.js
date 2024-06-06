@@ -7,7 +7,7 @@ import {
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Faq from "./pages/help/Faq";
-import Contact from "./pages/help/Contact";
+import Contact, { contactAction } from "./pages/help/Contact";
 import NotFound from "./pages/NotFound";
 import Careers, { careersLoader } from "./pages/careers/Careers";
 import CareerDetails, {
@@ -27,7 +27,8 @@ const router = createBrowserRouter(
       <Route path="/about" element={<About />} />
       <Route path="help" element={<HelpLayout />}>
         <Route path="faq" element={<Faq />} />
-        <Route path="contact" element={<Contact />} />
+        {/* Here I've just associated the action function for this route using action property to do some function after submitting form */}
+        <Route path="contact" element={<Contact />} action={contactAction} />
       </Route>
       <Route
         path="careers"
